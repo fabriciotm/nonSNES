@@ -20636,6 +20636,12 @@
 		(uuid "2fb2bc29-4474-44ae-b196-a782d974c6a0")
 	)
 	(junction
+		(at 31.75 392.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "307fae36-f1a0-4916-a265-1ad1a59093d9")
+	)
+	(junction
 		(at 33.02 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -21270,6 +21276,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81223549-6a0a-4a93-a448-2129641fcd2f")
+	)
+	(junction
+		(at 31.75 367.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "834d324b-1fac-40c1-b8fc-9079664159bb")
 	)
 	(junction
 		(at 436.88 255.27)
@@ -26705,6 +26717,16 @@
 			(type default)
 		)
 		(uuid "07436a17-0f55-4deb-85b4-9e10666adbd7")
+	)
+	(wire
+		(pts
+			(xy 24.13 382.27) (xy 24.13 367.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0746a706-6218-4304-9a81-27bd55e85f82")
 	)
 	(wire
 		(pts
@@ -32510,6 +32532,16 @@
 		)
 		(uuid "5d226603-aed2-4118-be2f-08d03edb6703")
 	)
+	(wire
+		(pts
+			(xy 24.13 367.03) (xy 31.75 367.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2dea68-4ddd-4afb-aa9e-3fb7f2e9a80d")
+	)
 	(bus
 		(pts
 			(xy 30.48 307.34) (xy 30.48 304.8)
@@ -36920,6 +36952,16 @@
 			(color 255 120 0 1)
 		)
 		(uuid "a121a4b9-3751-466a-8a1a-8e4644bb5e16")
+	)
+	(wire
+		(pts
+			(xy 24.13 392.43) (xy 31.75 392.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1452531-cd6a-42d8-aa11-52f44c22b0f3")
 	)
 	(wire
 		(pts
@@ -58263,7 +58305,7 @@
 		(fields_autoplaced yes)
 		(uuid "35052448-a343-4bc7-ad83-2c47ce5d88c8")
 		(property "Reference" "SW1"
-			(at 33.02 386.08 90)
+			(at 33.02 386.0799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58271,8 +58313,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 33.02 388.62 90)
+		(property "Value" "KB"
+			(at 33.02 388.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83943,6 +83985,76 @@
 			(project "nonSNES"
 				(path "/d1480d56-b791-43e1-bd4c-b0c74bb0533d"
 					(reference "TP104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 24.13 387.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0887f82-381f-48d3-b81c-6e5ef84a21bc")
+		(property "Reference" "SW2"
+			(at 25.4 386.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Old"
+			(at 25.4 388.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "SNES_Library:ResetSwitch"
+			(at 19.05 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 24.13 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f23497fe-c2ba-4138-a743-244616cd7853")
+		)
+		(pin "2"
+			(uuid "d1554e29-ccea-4d36-8e60-21c2374dfd68")
+		)
+		(instances
+			(project "nonSNES"
+				(path "/d1480d56-b791-43e1-bd4c-b0c74bb0533d"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
