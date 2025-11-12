@@ -9,9 +9,9 @@ The design tries to be a 1:1 recreation of the original SNSP-CPU-01 Rev5 board.
 - [X] Replace the obsolete trimmer capcaitor with an in-stock one
 - [X] Replace the reset button with a regular mechanical keyboard switch
 - [X] Include an AV out connector board using mousebites
-- [X] Replacefor the U11 regulator (the old mitsumi one had a nonstandard pinout for reset monitors)
+- [X] Replace the U11 regulator (the old mitsumi one had a nonstandard pinout for reset monitors)
 - [ ] Include RGB bypass mod
-- [ ] Remove the CIC/swapp it for a CIC replacement
+- [ ] Remove the CIC/swap it for a CIC replacement
 - [ ] Region switch
 - [ ] Replace the audio RAM
 - [ ] Replace the S-CLK clock generator
